@@ -1,0 +1,21 @@
+$color-ln: #006998;
+
+@font-face {
+	font-family: Arial-Regular;
+	src: url(../fonts/Arial/Arial.ttf);
+}
+@font-face {
+	font-family: Arial-Bold;
+	src: url(../fonts/Arial/Arial-Bold.ttf);
+}
+@font-face {
+	font-family: Suecaslab-Bold;
+	src: url(../fonts/SuecaSlab-Bold.otf);
+}
+@font-face {
+	font-family: Suecaslab;
+	src: url(../fonts/SuecaSlab-Regular.otf);
+}
+
+// definir una fuente base y solo aplicar el suecaslab a los titulos etc.
+// utilizar las variables

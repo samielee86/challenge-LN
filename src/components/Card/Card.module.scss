@@ -1,0 +1,75 @@
+.article {
+	display: flex;
+	flex-direction: column;
+
+	.cardBody {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.bodyAuthor {
+		border: 1px solid #cccccc;
+		box-sizing: border-box;
+		padding: 16px;
+		align-items: center;
+		margin-bottom: 16px;
+		h3 {
+			text-align: center;
+		}
+	}
+
+	.title {
+		color: #272727;
+		font-family: SuecaSlab-Bold;
+		font-weight: 400;
+		font-size: 20px;
+		line-height: 28px;
+		margin: 8px 0px 8px 0px;
+	}
+
+	.lead {
+		color: #0250c9;
+	}
+
+	.subhead {
+		font-family: Arial-Regular; // sacar con modif de global.scss
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 24px;
+		color: #333333;
+		margin: 0px;
+	}
+
+	.img {
+		display: flex;
+		flex-direction: column;
+		background: #bcd6ff;
+		border: 1px solid #f2f2f2;
+		margin: 0px 0px 8px 0px;
+	}
+
+	.authorImg {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-self: center;
+		padding: 0px;
+		width: 5rem;
+		height: 5rem;
+		border: 1px solid #cccccc;
+		border-radius: 200px;
+
+		img {
+			border-radius: 200px;
+		}
+	}
+
+	.author {
+		font-family: "Arial";
+		font-style: normal;
+		font-weight: 700;
+		font-size: 14px;
+		color: #272727;
+		margin: 8px 0px 8px 0px;
+	}
+}

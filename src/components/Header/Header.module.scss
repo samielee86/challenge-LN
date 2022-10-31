@@ -1,0 +1,11 @@
+@use "../../styles/global.scss" as var;
+
+.div {
+	display: flex;
+	justify-content: center;
+
+	h1 {
+		font-family: Suecaslab-Bold;
+		color: var.$color-ln;
+	}
+}
