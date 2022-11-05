@@ -1,4 +1,9 @@
 $color-ln: #006998;
+$XS: 8px;
+$SM: 16px;
+$ML: 24px;
+$LG: 32px;
+$XL: 40px;
 
 @font-face {
 	font-family: Arial-Regular;
@@ -17,5 +22,6 @@ $color-ln: #006998;
 	src: url(../fonts/SuecaSlab-Regular.otf);
 }
 
-// definir una fuente base y solo aplicar el suecaslab a los titulos etc.
-// utilizar las variables
+body {
+	font-family: Arial-Regular;
+}

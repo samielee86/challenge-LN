@@ -12,7 +12,7 @@ const articles = [
 		type: "Regular",
 	},
 	{
-		img: null,
+		img: "https://res.cloudinary.com/dhwlnxbib/image/upload/v1666894114/Challenge%20LN/NZQ2JKCFERA6NM4ZSX3DI735EI_odeqpy.webp",
 		lead: "Inflación",
 		title: "Moyano firmó un aumento de 107% para Camioneros y son cada vez más los gremios que negocian tres dígitos",
 		subHead:
@@ -22,40 +22,6 @@ const articles = [
 			"https://res.cloudinary.com/dhwlnxbib/image/upload/v1666894117/Challenge%20LN/2e12cfa4-5e1d-44ea-8f0c-33fe1da1e650_dmlp0l.webp",
 		url: "https://www.lanacion.com.ar/politica/hugo-moyano-logro-un-aumento-de-107-para-camioneros-y-son-cada-vez-mas-los-gremios-que-negocian-tres-nid27102022/",
 		type: "Regular",
-	},
-	{
-		img: "https://res.cloudinary.com/dhwlnxbib/image/upload/v1666894594/Challenge%20LN/YJ5RVECDOJCMHLTQC4KQDBIVAM_wso0ve.webp",
-		lead: "Elecciones 2023",
-		title: "Eduardo “Wado” De Pedro admitió que intentan convencer a Alberto Fernández para que no haya PASO el año próximo",
-		subHead:
-			"El ministro del Interior dijo que los gobernadores y los intendentes pretenden que se diriman las candidaturas puertas adentro del Frente de Todos",
-		author: null,
-		authorImg: null,
-		url: "https://www.lanacion.com.ar/politica/eduardo-wado-de-pedro-admitio-que-intentan-convencer-a-alberto-fernandez-para-que-no-haya-paso-el-nid27102022/",
-		type: "Regular",
-	},
-	{
-		img: "https://res.cloudinary.com/dhwlnxbib/image/upload/v1667232405/Challenge%20LN/M6NCGHVDXJEEPM64ECFEW6BFGE_c2y9c2.webp",
-		lead: "Proyecto",
-		title: "Wado de Pedro adelantó que trabaja para eliminar las elecciones legislativas intermedias",
-		subhead:
-			"La iniciativa del ministro del Interior busca que el gobierno o fuerza política que “ofrece” su gestión pueda desarrollar los cuatro años de mandato y “no tener al año otra elección”",
-		author: null,
-		authorImg: null,
-		url: "https://www.lanacion.com.ar/politica/eduardo-wado-de-pedro-sobre-las-paso-estoy-trabajando-en-un-proyecto-para-eliminar-la-eleccion-nid31102022/",
-		type: "Regular",
-	},
-	{
-		img: null,
-		lead: null,
-		title: "La generación de empleos “verdes” no solo contribuye a la ecología",
-		subhead:
-			"El cuidado del medio ambiente tiene también una importancia estratégica para la recuperación económica de la Argentina",
-		author: "Federico Caeiro",
-		authorImg:
-			"https://res.cloudinary.com/dhwlnxbib/image/upload/v1667233876/Challenge%20LN/3072412_upfvjg.png",
-		url: "https://www.lanacion.com.ar/opinion/la-generacion-de-empleos-verdes-no-solo-contribuye-a-la-ecologia-nid31102022/",
-		type: "Author",
 	},
 	{
 		img: "https://res.cloudinary.com/dhwlnxbib/image/upload/v1667235888/Challenge%20LN/MN5O4HIZJFCRJIQUDC2A734KW4_honqsp.webp",
