@@ -1,5 +1,29 @@
-section {
+@use "../../../styles/global.scss" as var;
+@use "../../../styles/mixin.scss" as mixin;
+.section {
 	display: flex;
 	flex-direction: column;
-	gap: 32px;
+	align-items: center;
+	padding: 0px;
+
+	.h2 {
+		align-self: flex-start;
+		border-bottom: 1px solid #e4e4e4;
+		width: stretch;
+		padding: 0px var.$SM 0px var.$SM;
+		margin-bottom: var.$ML;
+		h2 {
+			font-family: Suecaslab-Bold;
+			padding: 0px var.$SM;
+		}
+	}
+
+	.container {
+		display: flex;
+		flex-direction: column;
+		gap: var.$ML;
+		@include mixin.tablet {
+			flex-direction: row;
+		}
+	}
 }

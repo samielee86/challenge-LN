@@ -6,7 +6,7 @@ import styles from "./Main.module.scss";
 const Main = () => {
 	return (
 		<section className={styles.section}>
-			<CardGroupX3 />
+			<CardGroupX3 title="Card Group x 3" />
 			{/* <FocalIzquierdo /> */}
 		</section>
 	);

@@ -1,4 +1,4 @@
-const articles = [
+const artGroupX3 = [
 	{
 		img: "https://res.cloudinary.com/dhwlnxbib/image/upload/v1666892698/Challenge%20LN/UO4LJGTNDVGYVNPW4KRZD7HG7U_ibi26k.webp",
 		lead: "Trabas y diferencias",
@@ -24,16 +24,20 @@ const articles = [
 		type: "Regular",
 	},
 	{
-		img: "https://res.cloudinary.com/dhwlnxbib/image/upload/v1666894594/Challenge%20LN/YJ5RVECDOJCMHLTQC4KQDBIVAM_wso0ve.webp",
-		lead: "Elecciones 2023",
-		title: "Eduardo “Wado” De Pedro admitió que intentan convencer a Alberto Fernández para que no haya PASO el año próximo",
-		subHead:
-			"El ministro del Interior dijo que los gobernadores y los intendentes pretenden que se diriman las candidaturas puertas adentro del Frente de Todos",
-		author: null,
-		authorImg: null,
-		url: "https://www.lanacion.com.ar/politica/eduardo-wado-de-pedro-admitio-que-intentan-convencer-a-alberto-fernandez-para-que-no-haya-paso-el-nid27102022/",
-		type: "Regular",
+		img: "https://res.cloudinary.com/dhwlnxbib/image/upload/v1667235888/Challenge%20LN/MN5O4HIZJFCRJIQUDC2A734KW4_honqsp.webp",
+		lead: "Análisis",
+		title: "En un país donde ya nada es importante",
+		subhead:
+			"La estrategia de Sergio Massa consiste en paralizar la economía a cambio de juntar dólares en el Banco Central; cerca de 300 empresas industriales podrían parar en los próximos días por falta de insumos",
+		author: "Joaquin Morales Solá",
+		authorImg:
+			"https://res.cloudinary.com/dhwlnxbib/image/upload/v1667235847/Challenge%20LN/2089255_rzwvdw.png",
+		url: "https://www.lanacion.com.ar/opinion/en-un-pais-donde-ya-nada-es-importante-nid30102022/?R=1070d0",
+		type: "Author",
 	},
+];
+
+const artFocalIX3 = [
 	{
 		img: "https://res.cloudinary.com/dhwlnxbib/image/upload/v1667232405/Challenge%20LN/M6NCGHVDXJEEPM64ECFEW6BFGE_c2y9c2.webp",
 		lead: "Proyecto",
@@ -58,17 +62,16 @@ const articles = [
 		type: "Author",
 	},
 	{
-		img: "https://res.cloudinary.com/dhwlnxbib/image/upload/v1667235888/Challenge%20LN/MN5O4HIZJFCRJIQUDC2A734KW4_honqsp.webp",
-		lead: "Análisis",
-		title: "En un país donde ya nada es importante",
-		subhead:
-			"La estrategia de Sergio Massa consiste en paralizar la economía a cambio de juntar dólares en el Banco Central; cerca de 300 empresas industriales podrían parar en los próximos días por falta de insumos",
-		author: "Joaquin Morales Solá",
-		authorImg:
-			"https://res.cloudinary.com/dhwlnxbib/image/upload/v1667235847/Challenge%20LN/2089255_rzwvdw.png",
-		url: "https://www.lanacion.com.ar/opinion/en-un-pais-donde-ya-nada-es-importante-nid30102022/?R=1070d0",
-		type: "Author",
+		img: "https://res.cloudinary.com/dhwlnxbib/image/upload/v1666894594/Challenge%20LN/YJ5RVECDOJCMHLTQC4KQDBIVAM_wso0ve.webp",
+		lead: "Elecciones 2023",
+		title: "Eduardo “Wado” De Pedro admitió que intentan convencer a Alberto Fernández para que no haya PASO el año próximo",
+		subHead:
+			"El ministro del Interior dijo que los gobernadores y los intendentes pretenden que se diriman las candidaturas puertas adentro del Frente de Todos",
+		author: null,
+		authorImg: null,
+		url: "https://www.lanacion.com.ar/politica/eduardo-wado-de-pedro-admitio-que-intentan-convencer-a-alberto-fernandez-para-que-no-haya-paso-el-nid27102022/",
+		type: "Regular",
 	},
 ];
 
-export default articles;
+export { artGroupX3, artFocalIX3 };

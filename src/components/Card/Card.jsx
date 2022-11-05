@@ -13,6 +13,7 @@ const Card = ({ art }) => {
 			return true;
 		}
 	};
+
 	return (
 		<article className={styles.article}>
 			{isRegular() ? (
@@ -38,27 +39,23 @@ const Card = ({ art }) => {
 					)}
 					{art.title}
 				</h3>
-				<p className={styles.subhead}>{art.subHead}</p>
-
+				<span className={styles.subhead}>{art.subHead}</span>
 				{isAuthor() ? (
-					<>
-						<div className={styles.authorImg}>
-							<img
-								src={art.authorImg}
-								alt=""
-								width="100%"
-							/>
-						</div>
-						<h4 className={styles.author}>Por {art.author}</h4>
-					</>
+					<div className={styles.authorImg}>
+						<img
+							src={art.authorImg}
+							alt=""
+							width="100%"
+						/>
+					</div>
 				) : (
-					<>
-						{art.author ? (
-							<h4 className={styles.author}>Por {art.author}</h4>
-						) : (
-							<></>
-						)}
-					</>
+					<></>
+				)}
+
+				{art.author ? (
+					<span className={styles.author}>Por {art.author}</span>
+				) : (
+					<></>
 				)}
 			</div>
 		</article>
