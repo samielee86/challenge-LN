@@ -2,9 +2,20 @@ import React from "react";
 import styles from "./Card.module.scss";
 
 const Card = ({ art }) => {
+	const isRegular = () => {
+		if (art.type === "Regular") {
+			return true;
+		}
+	};
+
+	const isAuthor = () => {
+		if (art.type === "Author") {
+			return true;
+		}
+	};
 	return (
 		<article className={styles.article}>
-			{art.type === "Regular" && art.img && (
+			{isRegular() ? (
 				<div className={styles.img}>
 					<img
 						src={art.img}
@@ -12,30 +23,42 @@ const Card = ({ art }) => {
 						width="100%"
 					/>
 				</div>
+			) : (
+				<></>
 			)}
 			<div
 				className={`${styles.cardBody} ${
-					art.type === "Author" && styles.bodyAuthor
+					isAuthor() ? styles.bodyAuthor : ""
 				}`}>
 				<h3 className={styles.title}>
-					{art.lead && (
+					{art.lead ? (
 						<span className={styles.lead}>{art.lead}. </span>
+					) : (
+						<></>
 					)}
 					{art.title}
 				</h3>
-				{art.subHead && <p className={styles.subhead}>{art.subHead}</p>}
+				<p className={styles.subhead}>{art.subHead}</p>
 
-				{art.type === "Author" && (
-					<div className={styles.authorImg}>
-						<img
-							src={art.authorImg}
-							alt=""
-							width="100%"
-						/>
-					</div>
-				)}
-				{art.author && (
-					<h4 className={styles.author}>Por {art.author}</h4>
+				{isAuthor() ? (
+					<>
+						<div className={styles.authorImg}>
+							<img
+								src={art.authorImg}
+								alt=""
+								width="100%"
+							/>
+						</div>
+						<h4 className={styles.author}>Por {art.author}</h4>
+					</>
+				) : (
+					<>
+						{art.author ? (
+							<h4 className={styles.author}>Por {art.author}</h4>
+						) : (
+							<></>
+						)}
+					</>
 				)}
 			</div>
 		</article>

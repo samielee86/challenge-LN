@@ -1,3 +1,5 @@
+@use "../../styles/global.scss" as var;
+
 .article {
 	display: flex;
 	flex-direction: column;
@@ -10,9 +12,9 @@
 	.bodyAuthor {
 		border: 1px solid #cccccc;
 		box-sizing: border-box;
-		padding: 16px;
+		padding: var.$SM;
 		align-items: center;
-		margin-bottom: 16px;
+		margin-bottom: var.$SM;
 		h3 {
 			text-align: center;
 		}
@@ -24,7 +26,7 @@
 		font-weight: 400;
 		font-size: 20px;
 		line-height: 28px;
-		margin: 8px 0px 8px 0px;
+		margin: var.$XS 0px var.$XS 0px;
 	}
 
 	.lead {
@@ -32,10 +34,9 @@
 	}
 
 	.subhead {
-		font-family: Arial-Regular; // sacar con modif de global.scss
 		font-weight: 400;
-		font-size: 16px;
-		line-height: 24px;
+		font-size: var.$SM;
+		line-height: var.$ML;
 		color: #333333;
 		margin: 0px;
 	}
@@ -45,7 +46,7 @@
 		flex-direction: column;
 		background: #bcd6ff;
 		border: 1px solid #f2f2f2;
-		margin: 0px 0px 8px 0px;
+		margin: 0px 0px var.$XS 0px;
 	}
 
 	.authorImg {
@@ -65,11 +66,9 @@
 	}
 
 	.author {
-		font-family: "Arial";
-		font-style: normal;
 		font-weight: 700;
 		font-size: 14px;
 		color: #272727;
-		margin: 8px 0px 8px 0px;
+		margin: var.$XS 0px var.$XS 0px;
 	}
 }

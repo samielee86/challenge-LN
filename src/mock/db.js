@@ -12,7 +12,7 @@ const articles = [
 		type: "Regular",
 	},
 	{
-		img: null,
+		img: "https://res.cloudinary.com/dhwlnxbib/image/upload/v1666894114/Challenge%20LN/NZQ2JKCFERA6NM4ZSX3DI735EI_odeqpy.webp",
 		lead: "Inflación",
 		title: "Moyano firmó un aumento de 107% para Camioneros y son cada vez más los gremios que negocian tres dígitos",
 		subHead:
