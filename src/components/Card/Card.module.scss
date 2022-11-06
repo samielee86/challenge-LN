@@ -5,15 +5,17 @@
 	display: flex;
 	flex-direction: column;
 	padding: 0px;
-	// @include mixin.tablet {
-	// }
+	//@include mixin.tablet {
+	//}
 
 	.img {
-		display: flex;
-		flex-direction: column;
 		background: #bcd6ff;
-		border: 1px solid #f2f2f2;
 		margin-bottom: var.$XS;
+		border-top: 1px solid #cccccc;
+		border-bottom: 1px solid #cccccc;
+		@include mixin.tablet {
+			border: 1px solid #cccccc;
+		}
 	}
 
 	.cardBody {
@@ -28,6 +30,9 @@
 			font-size: 20px;
 			line-height: 28px;
 			margin: var.$XS 0px var.$XS 0px;
+			@include mixin.tablet {
+				font-family: Suecaslab;
+			}
 		}
 
 		.lead {
@@ -36,6 +41,9 @@
 
 		.subhead {
 			display: none;
+		}
+
+		.firstSubhead {
 			font-weight: 400;
 			font-size: var.$SM;
 			line-height: var.$ML;
@@ -43,37 +51,52 @@
 			margin-bottom: var.$XS;
 		}
 
-		.authorImg {
+		.authorContainer {
 			display: flex;
 			flex-direction: column;
-			justify-content: center;
-			align-self: center;
-			padding: 0px;
-			width: 5rem;
-			height: 5rem;
-			border: 1px solid #cccccc;
-			border-radius: 200px;
-
-			img {
+			.authorImg {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-self: center;
+				padding: 0px;
+				width: 5rem;
+				height: 5rem;
+				border: 1px solid #cccccc;
 				border-radius: 200px;
+				margin-bottom: var.$XS;
+				img {
+					border-radius: 200px;
+				}
+			}
+
+			.author {
+				font-family: Arial-Bold;
+				font-weight: 700;
+				font-size: 14px;
+				color: #272727;
+				margin-bottom: var.$XS;
 			}
 		}
+	}
+}
 
-		.author {
-			font-family: Arial-Bold;
-			font-weight: 700;
-			font-size: 14px;
-			color: #272727;
-			margin-bottom: var.$XS;
-		}
+.articleAuthor {
+	display: flex;
+	justify-content: center;
+	border: 1px solid #cccccc;
+	box-sizing: border-box;
+	margin: 0px 20px var.$SM 20px;
+	@include mixin.tablet {
+		margin: 0px 0px var.$SM 0px;
 	}
 
 	.bodyAuthor {
-		border: 1px solid #cccccc;
-		box-sizing: border-box;
-		padding: var.$SM;
 		align-items: center;
-		margin-bottom: var.$SM;
+		height: stretch;
+		justify-content: space-around;
+		gap: 8px;
+		padding: var.$SM var.$XS var.$SM var.$XS;
 		h3 {
 			text-align: center;
 		}

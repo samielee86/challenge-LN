@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./Card.module.scss";
 
-const Card = ({ art }) => {
+const Card = ({ art, id }) => {
 	const isRegular = () => {
 		if (art.type === "Regular") {
 			return true;
@@ -14,16 +14,24 @@ const Card = ({ art }) => {
 		}
 	};
 
+	const isFirstChildFocalI = () => {
+		if (id === 1) {
+			return true;
+		}
+	};
+
 	return (
-		<article className={styles.article}>
+		<article
+			className={`${styles.article} ${
+				isAuthor() ? styles.articleAuthor : ""
+			} `}>
 			{isRegular() ? (
-				<div className={styles.img}>
-					<img
-						src={art.img}
-						alt=""
-						width="100%"
-					/>
-				</div>
+				<img
+					className={styles.img}
+					src={art.img}
+					alt=""
+					width="100%"
+				/>
 			) : (
 				<></>
 			)}
@@ -39,24 +47,33 @@ const Card = ({ art }) => {
 					)}
 					{art.title}
 				</h3>
-				<span className={styles.subhead}>{art.subHead}</span>
-				{isAuthor() ? (
-					<div className={styles.authorImg}>
-						<img
-							src={art.authorImg}
-							alt=""
-							width="100%"
-						/>
-					</div>
-				) : (
-					<></>
-				)}
+				<span
+					className={`${
+						isFirstChildFocalI()
+							? styles.firstSubhead
+							: styles.subhead
+					}`}>
+					{art.subhead}
+				</span>
+				<div className={styles.authorContainer}>
+					{isAuthor() ? (
+						<div className={styles.authorImg}>
+							<img
+								src={art.authorImg}
+								alt=""
+								width="100%"
+							/>
+						</div>
+					) : (
+						<></>
+					)}
 
-				{art.author ? (
-					<span className={styles.author}>Por {art.author}</span>
-				) : (
-					<></>
-				)}
+					{art.author ? (
+						<span className={styles.author}>Por {art.author}</span>
+					) : (
+						<></>
+					)}
+				</div>
 			</div>
 		</article>
 	);

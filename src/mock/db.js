@@ -16,7 +16,7 @@ const artGroupX3 = [
 		lead: "Inflación",
 		title: "Moyano firmó un aumento de 107% para Camioneros y son cada vez más los gremios que negocian tres dígitos",
 		subHead:
-			"De esta manera, desactivó el paro sectorial al que había convocado para el lunes próximo; además, acordó un bono de fin de año de $100.000",
+			"De esta manera, desactivó el paro sectorial al que había convocado para el lunes próximo; además, acordó un bono de fin de año de $100.000.",
 		author: "Nicolás Balinotti",
 		authorImg:
 			"https://res.cloudinary.com/dhwlnxbib/image/upload/v1666894117/Challenge%20LN/2e12cfa4-5e1d-44ea-8f0c-33fe1da1e650_dmlp0l.webp",

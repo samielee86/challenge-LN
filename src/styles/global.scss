@@ -1,3 +1,4 @@
+@use "./mixin.scss" as mixin;
 $color-ln: #006998;
 $XS: 8px;
 $SM: 16px;
@@ -24,4 +25,8 @@ $XL: 40px;
 
 body {
 	font-family: Arial-Regular;
+	margin: 0px;
+	@include mixin.tablet {
+		padding: $SM;
+	}
 }
