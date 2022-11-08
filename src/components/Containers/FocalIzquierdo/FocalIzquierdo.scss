@@ -17,6 +17,11 @@
 		@include mixin.tablet {
 			margin: 0px 0px var.$SM 0px;
 		}
+
+		@include mixin.desktop {
+			margin: 0px 0px var.$ML 0px;
+		}
+
 		h3 {
 			font-family: Suecaslab-Bold;
 			font-size: 24px;
@@ -42,6 +47,16 @@
 			grid-area: one;
 			border-right: 1px solid #ccc;
 			padding-right: var.$ML;
+
+			@include mixin.tablet {
+				img {
+					order: 2;
+				}
+
+				.carBody {
+					order: 1;
+				}
+			}
 		}
 
 		.card2 {
@@ -54,8 +69,16 @@
 
 		@include mixin.tablet {
 			grid-template-areas:
-				"one one two"
-				"one one three";
+				"one one one two"
+				"one one one three";
+		}
+
+		@include mixin.desktop {
+			gap: var.$XL;
+
+			.card1 {
+				padding-right: var.$XL;
+			}
 		}
 	}
 }

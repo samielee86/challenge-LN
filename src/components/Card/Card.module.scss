@@ -5,10 +5,9 @@
 	display: flex;
 	flex-direction: column;
 	padding: 0px;
-	//@include mixin.tablet {
-	//}
 
 	.img {
+		display: flex;
 		background: #bcd6ff;
 		margin-bottom: var.$XS;
 		border-top: 1px solid #cccccc;
@@ -48,7 +47,7 @@
 			font-size: var.$SM;
 			line-height: var.$ML;
 			color: #333333;
-			margin-bottom: var.$XS;
+			margin-bottom: var.$SM;
 		}
 
 		.authorContainer {
@@ -88,7 +87,7 @@
 	box-sizing: border-box;
 	margin: 0px 20px var.$SM 20px;
 	@include mixin.tablet {
-		margin: 0px 0px var.$SM 0px;
+		margin: 0px 0px var.$XS 0px;
 	}
 
 	.bodyAuthor {

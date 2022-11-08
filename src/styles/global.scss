@@ -26,6 +26,13 @@ $XL: 40px;
 body {
 	font-family: Arial-Regular;
 	margin: 0px;
+
+	.wrapper-site {
+		width: 100%;
+		max-width: 1340px;
+		margin: 0 auto;
+		height: 100%;
+	}
 	@include mixin.tablet {
 		padding: $SM;
 	}
