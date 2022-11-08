@@ -3,28 +3,22 @@ import styles from "./Card.module.scss";
 
 const Card = ({ art, id }) => {
 	const isRegular = () => {
-		if (art.type === "Regular") {
-			return true;
-		}
+		return art.type === "Regular";
 	};
 
 	const isAuthor = () => {
-		if (art.type === "Author") {
-			return true;
-		}
+		return art.type === "Author";
 	};
 
 	const isFirstChildFocalI = () => {
-		if (id === 1) {
-			return true;
-		}
+		return id === 1;
 	};
 
 	return (
 		<article
 			className={`${styles.article} ${
 				isAuthor() ? styles.articleAuthor : ""
-			} `}>
+			} ${`card${id}`}`}>
 			{isRegular() ? (
 				<img
 					className={styles.img}

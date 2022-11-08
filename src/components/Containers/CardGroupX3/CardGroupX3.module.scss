@@ -12,6 +12,9 @@
 		border-bottom: 1px solid #e4e4e4;
 		width: stretch;
 		margin: 0px var.$SM var.$SM var.$SM;
+		@include mixin.tablet {
+			margin: 0px 0px var.$SM 0px;
+		}
 		h3 {
 			font-family: Suecaslab-Bold;
 			font-size: 24px;

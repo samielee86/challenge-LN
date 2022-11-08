@@ -1,5 +1,6 @@
 @use "../../../styles/global.scss" as var;
 @use "../../../styles/mixin.scss" as mixin;
+
 .section {
 	display: flex;
 	flex-direction: column;
@@ -12,6 +13,10 @@
 		border-bottom: 1px solid #e4e4e4;
 		width: stretch;
 		margin: 0px var.$SM var.$SM var.$SM;
+
+		@include mixin.tablet {
+			margin: 0px 0px var.$SM 0px;
+		}
 		h3 {
 			font-family: Suecaslab-Bold;
 			font-size: 24px;
@@ -26,16 +31,31 @@
 
 	.container {
 		display: grid;
-		gap: var.$LG;
+		gap: var.$ML;
 		grid-template-areas:
 			"one"
 			"two"
 			"three";
 
+		.card1 {
+			position: relative;
+			grid-area: one;
+			border-right: 1px solid #ccc;
+			padding-right: var.$ML;
+		}
+
+		.card2 {
+			grid-area: two;
+		}
+
+		.card3 {
+			grid-area: three;
+		}
+
 		@include mixin.tablet {
 			grid-template-areas:
-				"one two"
-				"one three";
+				"one one two"
+				"one one three";
 		}
 	}
 }
