@@ -14,6 +14,10 @@ const Card = ({ art, id }) => {
 		return id === 1;
 	};
 
+	const isInFocal = () => {
+		return id;
+	};
+
 	return (
 		<article
 			className={`${styles.article} ${
@@ -32,8 +36,11 @@ const Card = ({ art, id }) => {
 			<div
 				className={`${styles.cardBody} ${
 					isAuthor() ? styles.bodyAuthor : ""
-				}`}>
-				<h3 className={styles.title}>
+				} ${isInFocal() ? styles.focalIBody : ""}`}>
+				<h3
+					className={`${
+						isFirstChildFocalI() ? styles.titleFocalI : styles.title
+					}`}>
 					{art.lead ? (
 						<span className={styles.lead}>{art.lead}. </span>
 					) : (

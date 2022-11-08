@@ -34,6 +34,15 @@
 			}
 		}
 
+		.titleFocalI {
+			color: #272727;
+			font-family: SuecaSlab-Bold;
+			font-weight: 400;
+			font-size: 20px;
+			line-height: 28px;
+			margin: var.$XS 0px var.$XS 0px;
+		}
+
 		.lead {
 			color: #0250c9;
 		}
@@ -77,6 +86,10 @@
 				margin-bottom: var.$XS;
 			}
 		}
+	}
+
+	.focalIBody {
+		padding: 0px;
 	}
 }
 
