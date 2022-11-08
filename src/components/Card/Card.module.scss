@@ -89,7 +89,9 @@
 	}
 
 	.focalIBody {
-		padding: 0px;
+		@include mixin.tablet {
+			padding: 0px;
+		}
 	}
 }
 
